@@ -5,7 +5,7 @@ This project implements a collaborative filtering-based movie recommendation sys
 
 ## Project Structure
 
-- `Movie_Recommendation_System.ipynb`: Jupyter notebook for loading data, training the model, and generating recommendations for a user.
+- `test-movie-recommender-utilities.ipynb`: Jupyter notebook for loading data, training the model, and generating recommendations for a user.
 - `utils.py`: Python script containing utility functions for data processing, model training, and recommendation generation.
 
 ## Installation
@@ -20,7 +20,7 @@ pip install pandas tensorflow numpy
 
 ### Jupyter Notebook
 
-The Jupyter notebook (`Movie_Recommendation_System.ipynb`) provides a step-by-step walkthrough of the following tasks:
+The Jupyter notebook (`test-movie-recommender-utilities.ipynb`) provides a step-by-step walkthrough of the following tasks:
 
 1. **Data Preparation**:
    - Load and preprocess movie ratings data.
@@ -54,7 +54,7 @@ The `utils.py` script contains the following utility functions:
 ## Running the Project
 
 1. **Jupyter Notebook**:
-   - Open the `Movie_Recommendation_System.ipynb` notebook.
+   - Open the `test-movie-recommender-utilities.ipynb` notebook.
    - Execute the cells step-by-step to preprocess data, load the model, and generate recommendations for a user.
 
 2. **Python Script**:
@@ -84,13 +84,9 @@ recommendation_df = pd.DataFrame({"movie_id": normalized_ratings.columns, "user_
 print(recommendation_df.sort_values("RecommendationScore", ascending=False).head(10))
 ```
 
-## Contributing
-
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 ```
 
-This `README.md` file provides a comprehensive overview of the project, explains how to use the Jupyter notebook and the Python script, and offers an example of how to generate movie recommendations. Let me know if you need any modifications!
